@@ -1,0 +1,47 @@
+<!-- 
+Statement of Authorship: I Satinder Singh, 000824885 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza directions and Feedback</title>
+</head>
+    
+<body>
+    <div class="BrandLine">
+        
+        <h1 class="tracking-in-contract-bck-top">
+            Jatt Franchises
+        </h1>
+        <p class='puff-in-top'>
+            Welcome to our shop list, find which Pizza or Indian Franchise is near to you.
+        </p>
+        <spna id="infoDesk" class="InfoContainer"></spna>
+    </div>
+
+    <div class="mapButtons">
+        <button type="button" id="yourLocation" class="btn btn-dark roll-in-left">Your Location</button>
+        <input type="text" id="searchFiled" placeholder="Full Address Here" class="roll-in-left">
+        <button type="button" id="searchBtn" class="btn btn-dark roll-in-left">Search</button>
+        <button type="button" id="allShops" class="btn btn-dark roll-in-left ">All Shops</button>
+        <button type="button" id="pizzaShops" class="btn btn-dark roll-in-left">Pizza Shops</button>
+        <button type="button" id="IndianR" class="btn btn-dark roll-in-left">Indian Restaurants</button>
+        <button type="button" id="getDirection" class="btn btn-dark roll-in-left">Get Direction</button>
+    </div>
+    <div id="map"></div>
+    <br>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbsua4EskTMpwMIvO5vkvTgw35rhCwTfs&callback=initMap">
+        </script>
+    <script src="pizza.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
